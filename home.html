@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    
+    <style>
+        body {
+        background-image: url("bg.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: center;
+        text-align: center;
+        }
+        .title {
+            animation: animate 20s infinite linear;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        @keyframes animate {
+        0% {
+            color: rgb(141, 177, 183);
+        }
+       10% {
+            color: rgb(196, 196, 245);
+        }
+        20%{
+color: rgb(86, 71, 142);
+        }
+        30%{
+color: rgb(208, 160, 98);
+        }
+        40%{
+color: rgb(85, 23, 23);
+        }
+        50%{
+color: rgb(174, 198, 198);
+        }
+        60%{
+color: rgb(198, 117, 55);
+        }
+        70%{
+color: rgb(30, 86, 135);
+        }
+        80%{
+color: rgb(0, 0, 0);
+        }
+        90%{
+color: rgb(63, 135, 194);
+        }
+        100%{
+color: rgb(35, 172, 33);
+        } 
+    }
+.portfolio {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 40px;
+    border-radius: 10px;
+    transition: background-color 0.4s, color 0.4s;
+}
+.portfolio:hover {
+    color: rgb(239, 197, 197);
+    opacity: 0.5s;
+}
+.portfolio:active {
+transition: opacity 1s;
+}
+.more{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    transition: background-color 0.4s, color 0.4s;
+}
+.more:hover {
+    color: rgb(239, 197, 197);
+    opacity: 0.5s;    
+}
+.more:active {
+    transition: opacity 1s;
+}
+.contact {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: background-color 0.4s, color 0.4s;
+}
+.contact:hover {
+    color: rgb(239, 197, 197);
+    opacity: 0.5s;    
+
+}
+.contact:active {
+    transition: opacity 1s;
+}
+.haah {
+    font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+}
+.img1 {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        margin-right: 20px;
+      }
+      .img2 {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .img3 {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        margin-left: 20px;
+      }
+      .logo {
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+}
+      span {
+        color: rgb(219, 145, 7);
+        font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+}
+    
+    </style>
+</head>
+<body>    
+    <h2 class="logo">
+        Port<span>folio</span>
+    </h2>
+    <button class="portfolio" onclick="portfolio()">
+        ABOUT ME
+    </button>
+    <button class="more" onclick="more()">
+        SKILLS
+    </button>
+    <button class="contact" onclick="contact()">
+        CONTACT 
+    </button>
+    <h1 class="title">
+        HELLO!
+    </h1>
+    </h1>
+
+    <h4 class="haah">
+        AND I'M AN ICT STUDENT &#8482;
+    </h4>
+    <p class="haah">
+    Welcome To My Simple Portfolio. Where You Get To Know About Me :)
+    </p>
+    <br>
+      <img src="html.jpg" alt="html" class="img1">
+      <img src="css.jpg" alt="css" class="img2">
+      <img src="js.jpg" alt="js" class="img3">
+</body>
+<script>
+    function portfolio(){
+        window.location.href = "portfolio.html"
+    }
+    function more(){
+        window.location.href = 'services.html'
+    }
+    function contact(){
+      
+    }
+    function contact(){
+        window.location.href = "contact.html"
+    }
+</script>
+</html>
